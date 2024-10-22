@@ -74,7 +74,7 @@ const HistoryPage = () => {
     const fetchHistoryData = async () => {
       try {
         const response = await axios.get(
-          `http://127.0.0.1:5001/api/history/${userId}`
+          `https://depserver.vercel.app/api/history/${userId}`
         );
         setHistoryData(response.data);
       } catch (error) {
@@ -115,7 +115,7 @@ const HistoryPage = () => {
   const confirmDeleteConfirmation = async () => {
     setIsLoading(true);
     try {
-      await axios.delete(`http://127.0.0.1:5001/api/quiz/${quizToDelete}`);
+      await axios.delete(`https://depserver.vercel.app/api/quiz/${quizToDelete}`);
       setHistoryData((prevData) =>
         prevData.filter((q) => q._id !== quizToDelete)
       );
