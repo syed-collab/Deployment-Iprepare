@@ -91,7 +91,7 @@ const MCQsBox = () => {
 
     try {
       for (let i = 0; i < userResponses.length; i++) {
-        const response = await axios.post("http://43.204.143.124:5000/grade_mcq", {
+        const response = await axios.post("https://3bce-39-34-147-131.ngrok-free.app/grade_mcq", {
           user_answer: userResponses[i],
           correct_answer: questionsArray[i].correct_answer,
           explanation: questionsArray[i].explanation,
