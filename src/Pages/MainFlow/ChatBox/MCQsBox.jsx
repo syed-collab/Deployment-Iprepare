@@ -117,7 +117,7 @@ const MCQsBox = () => {
         });
       }
 
-      await axios.post("http://127.0.0.1:5001/api/quiz", {
+      await axios.post("https://depserver.vercel.app/api/quiz", {
         quizId: userId,
         questions: gradingResults,
         quizType: "simple mcqs",
