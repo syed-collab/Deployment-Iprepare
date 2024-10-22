@@ -54,8 +54,8 @@ const StartmcqQuiz = () => {
 
     const apiUrl =
       difficulty === "Easy"
-        ? "http://43.204.143.124:5000/generate_mcq"
-        : "http://43.204.143.124:5000/adaptive_mcq";
+        ? "https://3bce-39-34-147-131.ngrok-free.app/generate_mcq"
+        : "https://3bce-39-34-147-131.ngrok-free.app/adaptive_mcq";
 
     try {
       startQuiz(userId);
