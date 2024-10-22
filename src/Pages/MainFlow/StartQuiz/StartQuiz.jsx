@@ -81,7 +81,7 @@ const StartQuiz = () => {
           }
         );
       } else {
-        response = await axios.post("http://43.204.143.124:5000/", {
+        response = await axios.post("https://3bce-39-34-147-131.ngrok-free.app/", {
           topic: currentTopic,
           role,
           difficulty,
