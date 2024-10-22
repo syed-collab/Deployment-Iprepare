@@ -95,7 +95,7 @@ const AdaptiveMCQsBox = () => {
     }
 
     try {
-      const response = await axios.post("http://43.204.143.124:5000/adaptive_mcq", {
+      const response = await axios.post("https://3bce-39-34-147-131.ngrok-free.app/adaptive_mcq", {
         topic: quizData.topic,
         role: quizData.role,
         difficulty: quizData.difficulty,
@@ -174,7 +174,7 @@ const AdaptiveMCQsBox = () => {
     }
 
     try {
-      const response = await axios.post("http://43.204.143.124:5000/adaptive_mcq", {
+      const response = await axios.post("https://3bce-39-34-147-131.ngrok-free.app/adaptive_mcq", {
         topic: quizData.topic,
         role: quizData.role,
         difficulty: quizData.difficulty,
