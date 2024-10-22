@@ -141,7 +141,7 @@ const ChatBox = () => {
 
     try {
       for (let i = 0; i < userResponses.length; i++) {
-        const response = await axios.post("http://43.204.143.124:5000/grade", {
+        const response = await axios.post("https://3bce-39-34-147-131.ngrok-free.app/grade", {
           api_answer: questionsArray[i].answer,
           user_answer: userResponses[i],
         });
