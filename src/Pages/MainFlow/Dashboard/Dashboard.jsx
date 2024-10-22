@@ -53,7 +53,7 @@ const Dashboard = () => {
     const fetchHistoryData = async () => {
       try {
         const response = await axios.get(
-          `http://127.0.0.1:5001/api/history/${userId}`
+          `https://depserver.vercel.app/api/history/${userId}`
         );
         setHistoryData(response.data);
         
