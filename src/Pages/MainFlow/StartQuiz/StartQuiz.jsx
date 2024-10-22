@@ -72,7 +72,7 @@ const StartQuiz = () => {
         formData.append("num_questions", numQuestions.toString());
 
         response = await axios.post(
-          "http://43.204.143.124:5000/upload_pdf",
+          "https://3bce-39-34-147-131.ngrok-free.app/upload_pdf",
           formData,
           {
             headers: {
